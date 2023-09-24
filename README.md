@@ -1,1 +1,5 @@
-# safari_animal_classifier
+# Transfer Learning Safari Animal Classifier
+
+This is a weekend project I completed while starting the fast.ai deep learning course. The final product can be found at https://huggingface.co/spaces/tskst/safari_animal_classifier.
+
+The aim of this project was to get my feet wet with transfer learning and delpoy a useful ML app online. I use an existing deep learning image classification model, convnextv2_tiny, to classify images of safari animals. The training and validation data I use is ~100 duckduckgo-sourced images of each of 11 animal categories (ranging from species-specific to taxonomic family-specific). I experiment with a couple different data augmentation techniques and image sizes to see effects on classifier performance, but I do not by any means attempt to tune the model to a large extent. In the notebook, I am however able to reach 100% validation accuracy. The final app has two tabs, one for single image classification, and one for image organization. Given numerous image files, it will return a zipped folder, with subfolders named and organized according to the animal present in each image. The folder also has an 'unsure' folder for images it is not confident enough to predict a likely category for.
